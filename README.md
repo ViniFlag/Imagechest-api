@@ -1,13 +1,18 @@
-Utilizando api no imagechest
+# Salvar Links de Imagens do Imgchest
 
-Descrição:
-Utilizando da api do imagechest, navega pelos posts fornecidos pelo usário, recebendo as imagens contida no post e o nome do post em questão.
+## Descrição
+Este script Python tem como objetivo automatizar o processo de salvar links de imagens de uma determinada postagem no Imgchest. Ele cria um arquivo de texto para cada postagem, contendo comandos para um sistema de gerenciamento de imagens (não especificado), facilitando a organização e o download das imagens.
 
-Instalação:
-Abrir o pasta onde está o script salvo pelo visual studio code ou outro editor de código-fonte.
+## Pré-requisitos
+* **Python:** Certifique-se de ter o Python instalado em sua máquina.
+* **requests:** Instale a biblioteca requests usando o comando `pip install requests`.
 
-Uso:
-Colocar os ids do post que o usuário quer receber as imagens e colocar o token recebido ao fazer no imagechest.
+## Como Usar
+1. **Lista de IDs:** Edite a variável `lista_de_posts` para incluir os IDs das postagens desejadas.
+2. **Token de Autenticação:** Substitua o valor de `token` pelo seu token de acesso ao Imgchest.
+3. **Execução:** Execute o script Python.
+4. **Arquivos de Saída:** Os arquivos de texto com os links das imagens serão gerados no mesmo diretório do script, com o nome correspondente ao título da postagem.
 
-Tecnologias:
-API, Pynthon.
+**Observações:**
+* **Sistema de Gerenciamento de Imagens:** Os comandos `$im`, `$ai` e `$ai removeall` são exemplos genéricos. Adapte-os para o sistema de gerenciamento de imagens que você utiliza.
+* **Organização:** O script organiza os links em grupos de 5 por linha para facilitar a leitura e o processamento posterior.
